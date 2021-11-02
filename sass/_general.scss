@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: $os;
+}
+.wrapper {
+  max-width: $width;
+  margin: 0 auto;
+}
+.container {
+  padding: 0 15px;
+  max-width: $container_width;
+  margin: 0 auto;
+}
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
