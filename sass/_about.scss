@@ -1,0 +1,13 @@
+.about {
+  background: $white;
+  padding: 95px 0 105px;
+  &__container {
+    @include flex(space-between, center);
+  }
+  &__text {
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    margin-right: 50px;
+  }
+}
