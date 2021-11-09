@@ -1,0 +1,60 @@
+.menu {
+  padding: 70px 0;
+  background: $white;
+  h2 {
+    text-align: center;
+  }
+  .intro-text {
+    text-align: center;
+    max-width: 565px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+.tabs__container {
+  // outline: 1px solid red;
+  margin: 45px auto 55px;
+  max-width: $container_width;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 60px;
+  position: relative;
+  &::-webkit-scrollbar {
+    height: 8px;
+    background: $tabs-color;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $yellow;
+  }
+}
+.tabs {
+  list-style: none;
+  @include flex(center, center);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  &.overflow {
+    left: 0;
+    transform: none;
+  }
+}
+.tabs__item {
+  min-width: 160px;
+  padding: 0 5px;
+  height: 47px;
+  @include flex(center, center);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: $tabs-color;
+  user-select: none;
+  cursor: pointer;
+  &:not(:last-child) {
+    border-right: 1px solid $tabs-color;
+  }
+  &:hover,
+  &.active {
+    background: $yellow;
+  }
+}

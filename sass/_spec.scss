@@ -1,0 +1,31 @@
+.spec {
+  background: url(../img/bg-spec.jpg) center top/cover no-repeat;
+  h6 {
+    padding: 45px 0;
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+  }
+  &__container {
+    @include flex(space-between, center);
+  }
+}
+.swiper {
+  padding-bottom: 95px;
+}
+.swiper .spec__pagination {
+  bottom: 30px;
+}
+.swiper .spec__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: $white-opacity;
+  opacity: 1;
+  margin: 0 10px;
+}
+.swiper .spec__pagination .swiper-pagination-bullet-active {
+  background: $white;
+}

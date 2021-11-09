@@ -1,0 +1,71 @@
+.order {
+  padding-top: 100px;
+  background: $white;
+  &__container {
+    @include flex(space-between, center);
+  }
+  &__form {
+    width: 50%;
+    max-width: 565px;
+    margin-right: 50px;
+    h2 {
+      text-align: center;
+    }
+  }
+  &__form-form {
+    @include flex(space-between, flex-start);
+    flex-wrap: wrap;
+    input,
+    select {
+      width: calc(50% - 5px);
+      border: none;
+      background: $gray;
+      height: 60px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      padding: 0 20px;
+      outline: none;
+      border: 1px solid transparent;
+      &:focus {
+        border-color: $yellow;
+      }
+      &::placeholder {
+        color: $gray-opacity;
+      }
+    }
+    select {
+      appearance: none;
+      cursor: pointer;
+      background: $gray url(../img/arrow.svg) no-repeat 96% center;
+    }
+    button {
+      width: 100%;
+      height: 60px;
+      border-radius: 5px;
+      background: $yellow;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      color: $white;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background: darken($yellow, 10%);
+      }
+    }
+  }
+}
+.order__contacts {
+  text-align: center;
+  padding: 45px 15px;
+  font-size: 12px;
+  line-height: 100%;
+  color: $gray-opacity;
+  a {
+    color: $gray-opacity;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}

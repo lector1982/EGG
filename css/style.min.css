@@ -75,6 +75,25 @@ section h2::after {
   transform: translate(30%, -50%);
 }
 
+.left__img {
+  width: 50%;
+  max-width: 500px;
+  position: relative;
+  margin-right: 50px;
+}
+
+.left__img img {
+  border-radius: 5px;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+  max-width: 100%;
+  height: auto;
+}
+
+.left__img .circle {
+  left: 0;
+  transform: translate(-40%, -50%);
+}
+
 .circle {
   width: 250px;
   height: 250px;
@@ -203,5 +222,237 @@ section h2::after {
   max-width: 600px;
   text-align: center;
   margin-right: 50px;
+}
+
+.team {
+  padding-bottom: 120px;
+  background: url(../img/bg-team.jpg) center top/cover no-repeat;
+}
+
+.team h6 {
+  padding: 45px 0;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.team__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team__text {
+  text-align: center;
+  color: #fff;
+  width: 50%;
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.order {
+  padding-top: 100px;
+  background: #fff;
+}
+
+.order__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__form {
+  width: 50%;
+  max-width: 565px;
+  margin-right: 50px;
+}
+
+.order__form h2 {
+  text-align: center;
+}
+
+.order__form-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.order__form-form input,
+.order__form-form select {
+  width: calc(50% - 5px);
+  border: none;
+  background: #e5e5e5;
+  height: 60px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  outline: none;
+  border: 1px solid transparent;
+}
+
+.order__form-form input:focus,
+.order__form-form select:focus {
+  border-color: #e8c300;
+}
+
+.order__form-form input::placeholder,
+.order__form-form select::placeholder {
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.order__form-form select {
+  appearance: none;
+  cursor: pointer;
+  background: #e5e5e5 url(../img/arrow.svg) no-repeat 96% center;
+}
+
+.order__form-form button {
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  background: #e8c300;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.order__form-form button:hover {
+  background: #b59800;
+}
+
+.order__contacts {
+  text-align: center;
+  padding: 45px 15px;
+  font-size: 12px;
+  line-height: 100%;
+  color: rgba(51, 51, 51, 0.5);
+}
+
+.order__contacts a {
+  color: rgba(51, 51, 51, 0.5);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.spec {
+  background: url(../img/bg-spec.jpg) center top/cover no-repeat;
+}
+
+.spec h6 {
+  padding: 45px 0;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+.spec__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.swiper {
+  padding-bottom: 95px;
+}
+
+.swiper .spec__pagination {
+  bottom: 30px;
+}
+
+.swiper .spec__pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  margin: 0 10px;
+}
+
+.swiper .spec__pagination .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.menu {
+  padding: 70px 0;
+  background: #fff;
+}
+
+.menu h2 {
+  text-align: center;
+}
+
+.menu .intro-text {
+  text-align: center;
+  max-width: 565px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.tabs__container {
+  margin: 45px auto 55px;
+  max-width: 1170px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  height: 60px;
+  position: relative;
+}
+
+.tabs__container::-webkit-scrollbar {
+  height: 8px;
+  background: #333;
+}
+
+.tabs__container::-webkit-scrollbar-thumb {
+  background: #e8c300;
+}
+
+.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tabs.overflow {
+  left: 0;
+  transform: none;
+}
+
+.tabs__item {
+  min-width: 160px;
+  padding: 0 5px;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+  user-select: none;
+  cursor: pointer;
+}
+
+.tabs__item:not(:last-child) {
+  border-right: 1px solid #333;
+}
+
+.tabs__item:hover, .tabs__item.active {
+  background: #e8c300;
 }
 /*# sourceMappingURL=style.min.css.map */

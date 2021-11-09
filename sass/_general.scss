@@ -71,6 +71,21 @@ section h2 {
     transform: translate(30%, -50%);
   }
 }
+.left__img {
+  width: 50%;
+  max-width: 500px;
+  position: relative;
+  margin-right: 50px;
+  img {
+    @include img;
+    max-width: 100%;
+    height: auto;
+  }
+  .circle {
+    left: 0;
+    transform: translate(-40%, -50%);
+  }
+}
 .circle {
   width: 250px;
   height: 250px;
